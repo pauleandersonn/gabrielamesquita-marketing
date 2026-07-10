@@ -25,6 +25,11 @@ build/
 .vscode/
 .idea/
 
-# Local-only temporários
+# Local-only (auto-commit roda local, logs ficam fora do repo)
 /tmp
 /tmp/
+
+# Logs + scripts locais do auto-commit
+/logs/
+/scripts/auto-commit.local.ps1
+/scripts/run-auto-commit.bat
