@@ -64,6 +64,19 @@ Documento completo: `01-estrategia/pablo-gabriela-mesquita.md`
 2. Saúde da mulher como especialidade em biomedicina integrativa
 3. Atendimento humanizado online — pacientes do Brasil todo
 
+---
+
+## 3b. Plano de Marketing v1 (FECHADO 10/07)
+
+Documento completo: `01-estrategia/plano-de-marketing-v1.md`
+
+**Framework de conteúdo:** Educa (50%) / Conecta (30%) / Converte (20%)
+**Frequência alvo:** 1 Reels + 1 carrossel por semana + 3-5 Stories/semana
+**Budget Fase 1 (orgânico):** R$ 30/mês (Canva Pro)
+**Budget Fase 3 (tráfego pago):** R$ 150-300/mês (Meta Ads Andromeda)
+**Compliance ativo:** CFBM, sem prescrição, disclaimer em todo post de saúde, autoria Gabriela
+**Próximos documentos dependentes:** plano-de-meta-v1.md (opcional), roteiros Semana 1-4 Instagram
+
 ## 4. Funil TOPO / MEIO / FUNDO
 
 ### TOPO (autoridade + descoberta)
