@@ -1,0 +1,30 @@
+# OS / Editor tmp
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+*.bak
+
+# Credenciais / segredos
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+
+# Logs e builds
+*.log
+node_modules/
+dist/
+build/
+.cache/
+.kilo/
+.ai/
+.vscode/
+.idea/
+
+# Local-only temporários
+/tmp
+/tmp/
