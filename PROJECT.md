@@ -169,14 +169,19 @@ Documento completo: `01-estrategia/pablo-gabriela-mesquita.md`
 - `01-estrategia/pablo-gabriela-mesquita.md` — PABLO fechado (persona, ângulo, benefício, linguagem, oferta)
 - `01-estrategia/execucao-instagram.md` — plano operacional só-Instagram 30 dias
 - `01-estrategia/plano-de-negocio-v1.md` — plano de negócio completo (10 capítulos)
-- `01-estrategia/hosting-netlify-drop.md` — **guia passo a passo pra publicar a landing em 2min**
-- `index.html` — landing page one-page (single file, pronta pra hospedar)
+- `01-estrategia/hosting-netlify-drop.md` — guia pra publicar landing em 2min (caso queira tirar do Pages)
+- `index.html` + 3 JPGs — landing page one-page completa
+
+**Deploy ativo:**
+- **URL público:** https://pauleandersonn.github.io/gabrielamesquita-marketing/
+- **Hospedagem:** GitHub Pages (repo público `pauleandersonn/gabrielamesquita-marketing`)
+- **SSL:** automático
+- **A cada push em `main`:** GitHub Pages rebuild automática
 
 **O que falta pra ativar:**
-1. ⏳ Substituir `5500000000000` pelo WhatsApp real da Gabriele (4 ocorrências no HTML)
-2. ⏳ Substituir `gabrielamesquita.com.br` nos metadados por domínio real (3 ocorrências)
-3. ⏳ Hospedar via Netlify Drop (seguir `hosting-netlify-drop.md`)
-4. ⏳ Substituir os "boxes" da foto profissional (atualmente mostram glifos "G" e "Gabriele Mesquita · 12 anos")
+1. ⏳ Substituir `5500000000000` pelo WhatsApp real da Gabriele (8 ocorrências no HTML)
+2. ⏳ Substituir `gabrielamesquita.com.br` nos metadados por domínio real (3 ocorrências, opcional)
+3. ⏳ Registrar `gabrielamesquita.com.br` (R$ 40/ano) + conectar no Pages pra tirar o `.github.io`
 
 ## 11. Próximo checkpoint (atualizado 10/07 após coleta)
 
