@@ -186,22 +186,33 @@ Documento completo: `01-estrategia/pablo-gabriela-mesquita.md`
 ## 11. Próximo checkpoint (atualizado 10/07 após coleta)
 
 **Tudo confirmado em 10/07:**
-- Nome: Gabriele Mesquita (vou padronizar como "Gabriela Mesquita" no PABLO público; ajustar com ela se preferir "Gabriele")
+- Nome: Gabriele Mesquita (padronizado como "Gabriele" no site público)
 - Onde exerce: laboratório / análises clínicas
 - Anos de atuação: 12
 - Foco integrativa: saúde da mulher + suplementação (escopo: hormonal / TPM / menopausa)
 - Quem procura ela: combinação (amigas + colegas + redes antigas) → valida ângulo
 - Instagram profissional: não tem (começa do zero)
 - 1x semana pra gravar: 1 Reels + 1 carrossel/semana (4-8 posts/mês)
-- Nome público escolhido: "Gabriela Mesquita + descritivo" (sem "Dra.")
+- Nome público escolhido: "Gabriele Mesquita + descritivo" (sem "Dra.")
 - Tom de comunicação escolhido: empatia primeiro (acolhe)
+- **WhatsApp real:** (92) 99450-4006 — integrado ao site em 9 CTAs
 
-**Pronto pra próxima sprint (próxima sessão):**
-1. Verificar domínio `gabrielamesquita.com.br` no Registro.br (~R$ 40/ano)
-2. Verificar @instagram disponíveis (3 opções)
-3. Briefing visual com ela (cor de roupa, cenário no vídeo)
-4. Calendário 30 dias com 4-8 posts mistos
-5. Kit 1 de criativos Andromeda (TOPO + FUNDO)
-6. Configurar WhatsApp Business dedicado
-7. Montar site one-page institucional (site-builder, fluxo "institucional")
-8. Setup pixel Meta + UTM padronizada
+**Estado final 10/07 (deploy completo):**
+- ✅ PABLO fechado + plano de negócio v1 + guia Netlify Drop
+- ✅ Landing HTML single-file com identidade completa (cream + navy + gold)
+- ✅ 3 fotos dela integradas (hero + sobre + plano fundo)
+- ✅ Schema.org ProfessionalService configurado
+- ✅ WhatsApp real em todos os botões
+- ✅ Deploy GitHub Pages: https://pauleandersonn.github.io/gabrielamesquita-marketing/
+- ✅ HTTPS automático
+- ✅ CI/CD: push em `main` → rebuild automático
+- ✅ Mirror Obsidian atualizado
+- ✅ Memória Samara com histórico
+
+**Próxima sprint (quando você quiser):**
+1. Criar conta Instagram `@gabrielamesquitasaudedamulher` (15min)
+2. Briefing visual com ela (cor de roupa, cenário no vídeo)
+3. Calendário 30 dias com 4-8 posts mistos
+4. Kit 1 de criativos Andromeda (TOPO + FUNDO)
+5. Roteiro do 1º Reels + 1º carrossel com copy gerado
+6. (Opcional) Registrar `gabrielamesquita.com.br` (R$ 40) + conectar Pages pra URL limpa
