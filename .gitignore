@@ -29,7 +29,10 @@ build/
 /tmp
 /tmp/
 
-# Logs + scripts locais do auto-commit
+# Logs ficam fora do repo, scripts locais permanecem rastreáveis
 /logs/
-/scripts/auto-commit.local.ps1
-/scripts/run-auto-commit.bat
+
+# NÃO ignora as imagens da landing — elas sao parte do produto
+# !/gabriele-hero.jpg
+# !/gabriele-sobre-1.jpg
+# !/gabriele-sobre-2.jpg

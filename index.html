@@ -14,6 +14,7 @@
 <meta property="og:description" content="Investigação a fundo + suplementação racional. Acolhe primeiro, explica depois. Consulta online ou presencial em Manaus." />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="pt_BR" />
+<meta property="og:image" content="./gabriele-hero.jpg" />
 
 <!-- Schema.org JSON-LD: ProfessionalService -->
 <script type="application/ld+json">
@@ -22,7 +23,7 @@
   "@type": "ProfessionalService",
   "name": "Gabriele Mesquita - Biomedicina Integrativa",
   "description": "Consultas de biomedicina integrativa focada em saúde da mulher. Investigação funcional de exames laboratoriais e suplementação racional individualizada.",
-  "image": "https://gabrielamesquita.com.br/og-image.jpg",
+  "image": ["./gabriele-hero.jpg", "./gabriele-sobre-1.jpg", "./gabriele-sobre-2.jpg"],
   "telephone": "+55-92-0000-0000",
   "areaServed": ["BR", "Manaus"],
   "priceRange": "R$ 350 - R$ 1500",
@@ -212,7 +213,10 @@ a:hover { color: var(--gold); }
 .btn-outline:hover { background: var(--navy); color: var(--cream); }
 
 .hero-visual {
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url('./gabriele-hero.jpg');
+  background-size: cover;
+  background-position: center 20%;
   border-radius: 28px;
   aspect-ratio: 4 / 5;
   position: relative;
@@ -224,36 +228,46 @@ a:hover { color: var(--gold); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 30% 20%, rgba(200, 165, 80, 0.4) 0%, transparent 40%),
-    radial-gradient(circle at 70% 80%, rgba(200, 165, 80, 0.2) 0%, transparent 50%);
+    linear-gradient(180deg, transparent 50%, rgba(15, 30, 50, 0.6) 100%);
+  pointer-events: none;
 }
 .hero-visual-frame {
   position: absolute;
   inset: 16px;
   border: 1px dashed rgba(245, 240, 230, 0.18);
   border-radius: 18px;
+  z-index: 1;
 }
 .hero-visual-initial {
   position: absolute;
   bottom: 36px;
   left: 36px;
   font-family: 'Playfair Display', serif;
-  font-size: 6rem;
+  font-size: 1.1rem;
   color: var(--cream);
   font-weight: 700;
-  opacity: 0.95;
+  letter-spacing: 0.06em;
   z-index: 2;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+.hero-visual-initial span {
+  color: var(--gold-light);
+  font-weight: 600;
 }
 .hero-visual-label {
   position: absolute;
   top: 36px;
   left: 36px;
   color: var(--cream);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   z-index: 2;
-  opacity: 0.7;
+  opacity: 0.85;
+  background: rgba(15, 30, 50, 0.4);
+  padding: 6px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
 }
 
 /* TRUST BAR */
@@ -444,24 +458,43 @@ section {
   gap: 60px;
   align-items: center;
 }
-.sobre-avatar {
-  background: var(--cream-deep);
-  aspect-ratio: 1 / 1;
+.sobre-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.sobre-foto {
+  background-color: var(--cream-deep);
+  background-size: cover;
+  background-position: center;
   border-radius: 24px;
   position: relative;
   box-shadow: 0 20px 60px var(--shadow-strong);
   border: 1px solid var(--bege);
+  overflow: hidden;
+  min-height: 320px;
 }
-.sobre-avatar-glyph {
+.sobre-foto.foto-principal {
+  grid-row: span 2;
+  aspect-ratio: 4 / 5;
+}
+.sobre-foto.foto-aux {
+  aspect-ratio: 1 / 1;
+}
+.sobre-foto-caption {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 9rem;
-  color: var(--gold);
-  font-weight: 700;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  padding: 10px 14px;
+  background: rgba(15, 30, 50, 0.75);
+  color: var(--cream);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  font-weight: 500;
 }
 .sobre-stats {
   display: grid;
@@ -590,7 +623,8 @@ section {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { max-width: 360px; margin: 0 auto; }
   .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
-  .sobre-avatar { max-width: 320px; margin: 0 auto; }
+  .sobre-fotos { max-width: 480px; margin: 0 auto; }
+  .sobre-foto.foto-principal { grid-row: auto; aspect-ratio: 4 / 5; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
@@ -639,8 +673,8 @@ section {
     </div>
     <div class="hero-visual" aria-label="Foto Gabriele Mesquita">
       <div class="hero-visual-frame"></div>
-      <span class="hero-visual-label">Gabriele Mesquita · 12 anos</span>
-      <span class="hero-visual-initial">G.</span>
+      <span class="hero-visual-label">Biomédica Integrativa · CRBM ativo</span>
+      <span class="hero-visual-initial">Gabriele <span>Mesquita</span></span>
     </div>
   </div>
 </header>
@@ -713,8 +747,13 @@ section {
 <!-- ============ SOBRE ============ -->
 <section class="section-sobre" id="sobre" style="background:var(--cream-deep)">
   <div class="container sobre-grid">
-    <div class="sobre-avatar" aria-label="Gabriele Mesquita">
-      <div class="sobre-avatar-glyph">G</div>
+    <div class="sobre-fotos">
+      <div class="sobre-foto foto-principal" style="background-image: url('./gabriele-sobre-1.jpg');" aria-label="Gabriele Mesquita">
+        <span class="sobre-foto-caption">Atendendo com escuta ativa desde 2014</span>
+      </div>
+      <div class="sobre-foto foto-aux" style="background-image: url('./gabriele-sobre-2.jpg');" aria-label="Gabriele Mesquita em ação">
+        <span class="sobre-foto-caption">+mil exames analisados</span>
+      </div>
     </div>
     <div>
       <span class="eyebrow">Quem te atende</span>
