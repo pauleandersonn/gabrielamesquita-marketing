@@ -23,7 +23,7 @@
   "@type": "ProfessionalService",
   "name": "Gabriele Mesquita - Biomedicina Integrativa",
   "description": "Consultas de biomedicina integrativa focada em saúde da mulher. Investigação funcional de exames laboratoriais e suplementação racional individualizada.",
-  "image": ["./gabriele-hero.jpg", "./gabriele-sobre-1.jpg", "./gabriele-sobre-2.jpg"],
+  "image": ["./gabriele-hero.jpg", "./gabriele-sobre-1.jpg"],
   "telephone": "+55-92-99450-4006",
   "areaServed": ["BR", "Manaus"],
   "priceRange": "R$ 350 - R$ 1500",
@@ -460,7 +460,7 @@ section {
 }
 .sobre-fotos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 16px;
   align-items: stretch;
 }
@@ -476,11 +476,7 @@ section {
   min-height: 320px;
 }
 .sobre-foto.foto-principal {
-  grid-row: span 2;
   aspect-ratio: 4 / 5;
-}
-.sobre-foto.foto-aux {
-  aspect-ratio: 1 / 1;
 }
 .sobre-foto-caption {
   position: absolute;
@@ -623,8 +619,8 @@ section {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { max-width: 360px; margin: 0 auto; }
   .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
-  .sobre-fotos { max-width: 480px; margin: 0 auto; }
-  .sobre-foto.foto-principal { grid-row: auto; aspect-ratio: 4 / 5; }
+  .sobre-fotos { max-width: 360px; margin: 0 auto; }
+  .sobre-foto.foto-principal { aspect-ratio: 4 / 5; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
@@ -750,9 +746,6 @@ section {
     <div class="sobre-fotos">
       <div class="sobre-foto foto-principal" style="background-image: url('./gabriele-sobre-1.jpg');" aria-label="Gabriele Mesquita">
         <span class="sobre-foto-caption">Atendendo com escuta ativa desde 2014</span>
-      </div>
-      <div class="sobre-foto foto-aux" style="background-image: url('./gabriele-sobre-2.jpg');" aria-label="Gabriele Mesquita em ação">
-        <span class="sobre-foto-caption">+mil exames analisados</span>
       </div>
     </div>
     <div>
